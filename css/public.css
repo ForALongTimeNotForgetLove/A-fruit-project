@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+header{
+    width: 100%;
+    height: 74px;
+    border-bottom: 1px solid black;
+}
+#head{
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+#head>img{
+    width: 138px;
+    height: 52px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+#head>ul{
+    float: left;
+    margin-left: 138px;
+    margin-top: 30px;
+}
+#head>ul>li{
+    float: left;
+    margin-left: 50px;
+    font-size: 18px;
+}
+#head>span{
+    float: right;
+    margin-left: 10px;
+    width: 50px;
+    height: 32px;
+    margin-top: 22px;
+    border: 1px solid red;
+    text-align: center;
+    line-height: 32px;
+    box-sizing: border-box;
+}
+#head>img:nth-child(5){
+    width: 24px;
+    height: 24px;
+    position: inherit;
+    float: right;
+    margin-top: 4px;
+}
+footer{
+    width: 100%;
+    height: 360px;
+    background-color: #505050;
+    position: absolute;
+    bottom: 0;
+}
+#foot{
+    width: 1024px;
+    margin: 0 auto;
+    margin-top: 42px;
+    overflow: hidden;
+}
+#foot>img{
+    float: left;
+    width: 160px;
+    height: 160px;
+}
+#foot>.one{
+    width: 140px;
+    float: left;
+    margin-left: 22px;
+    font-size: 14px;
+    color: #979c9f;
+    margin-right: 34px;
+}
+#foot>.one>li:nth-child(1){
+    margin-bottom: 22px;
+}
+#foot>.one>li:nth-child(2){
+    margin-bottom: 14px;
+}
+#foot>.two{
+    float: left;
+    font-size: 14px;
+    color: #979c9f;
+    margin-right: 30px;
+}
+#foot>.two>li:nth-child(1){
+    margin-bottom: 30px;
+    font-size: 16px;
+    color: white;
+}
+#foot>.two>li{
+    margin-bottom: 8px;
+}
+#foot>.three{
+    float: left;
+    font-size: 14px;
+    color: #979c9f;
+    margin-right: 30px;
+}
+#foot>.three>li:nth-child(1){
+    margin-bottom: 30px;
+    font-size: 16px;
+    color: white;
+}
+#foot>.three li{
+    margin-bottom: 8px;
+}
+#foot>.three>li:nth-child(2){
+    overflow: hidden;
+}
+#foot>.three>li:nth-child(2)>ul{
+    float: left;
+}
+#foot>.three>li:nth-child(2)>ul:nth-child(1){
+    margin-right: 16px;
+}
+#foot>ul:last-child{
+    margin-right: 0;
+}
