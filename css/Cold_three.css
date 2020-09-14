@@ -1,0 +1,87 @@
+#zhong>.two {
+    padding-top: 35px;
+}
+
+#zhong>.two>.two_q {
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 35px;
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#zhong>.two>.two_q:nth-child(1) {
+    margin-top: inherit;
+}
+
+#zhong>.two>.two_q>.t_1 {
+    padding-left: 24px;
+    border-left: 6px solid red;
+    margin-bottom: 36px;
+    box-sizing: border-box;
+}
+
+#zhong>.two>.two_q>.t_2 {
+    overflow: hidden;
+    padding-left: 24px;
+    border-bottom: 1px dashed #dbdbdb;
+    margin-bottom: 17px;
+}
+
+#zhong>.two>.two_q>.t_2>li {
+    float: left;
+    width: 120px;
+    text-align: center;
+    margin-bottom: 22px;
+    margin-right: 21px;
+}
+
+#zhong>.two>.two_q>.t_2>li>img {
+    margin-bottom: 17px;
+}
+
+#zhong>.two>.two_q>.t_2>li>p {
+    font-size: 12px;
+    color: #aaa387;
+}
+
+#zhong>.two>.two_q>.t_3 {
+    overflow: hidden;
+    padding-left: 24px;
+}
+
+#zhong>.two>.two_q>.t_3>li {
+    float: left;
+    width: 120px;
+    text-align: center;
+    font-size: 12px;
+    color: #aaa387;
+    margin-right: 21px;
+    margin-bottom: 21px;
+}
+
+.t_2>li>img:hover{
+    cursor: pointer;
+    animation: name 2s linear;
+}
+@keyframes name {
+    0%{
+        transform: rotateZ(0deg);
+    }
+    20%{
+        transform: rotateZ(72deg);
+    }
+    40%{
+        transform: rotateZ(144deg);
+    }
+    60%{
+        transform: rotateZ(216deg);
+    }
+    80%{
+        transform: rotateZ(288deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
