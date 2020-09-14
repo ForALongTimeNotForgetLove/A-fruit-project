@@ -4,51 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./../css/reigster.css">
-    <link rel="stylesheet" href="./../css/public.css">
+    <link rel="stylesheet" href="./../../css/public.css">
+    <link rel="stylesheet" href="./../../css/report.css">
 </head>
 <body>
     <header>
         <div id="head">
-            <img src="./../image/素材图片/logonew.png" alt="">
+            <img src="./../../image/素材图片/logonew.png" alt="">
             <ul>
-                <li ><a href="./index.html">首页</a> </li>
-                <li><a href="./play/Coldplay.html">酷玩</a></li>
-                <li><a href="./guid/guid.html">导购</a></li>
-                <li><a href="./use/tryout.html">试用</a> </li>
-                <li><a href="./report/report.html">报告</a> </li>
+                <li ><a href="./../index.html" >首页</a> </li>
+                <li><a href="./../play/Coldplay.html">酷玩</a></li>
+                <li><a href="./../guid/guid.html">导购</a></li>
+                <li><a href="./../use/tryout.html">试用</a> </li>
+                <li><a href="#" style="color: red;">报告</a> </li>
             </ul>
-            <span><a href="#">注册</a></span>
+            <span><a href="./../register.html">注册</a></span>
             <span>登录</span>
-            <img src="./../image/小图片/search.png" alt="">
+            <img src="./../../image/小图片/search.png" alt="">
         </div>
     </header>
 
-
-    <form class="box">
-        <div class="title">
-            <div></div>
-            <div>注册极果</div>
+    <div id="zhong">
+    	<div class="one">
+    		<span>免费试用</span>
+    		<ul class="t1">
+    			<li><a href="./report.html">大众试用</a></li>
+    			<li><a href="#">体验师专项</a></li>
+            </ul>
         </div>
-        <div class="main">
-            <input type="text" placeholder="请输入登录手机号" class="tel">
-            <input type="text" placeholder="请输入图片校验码" class="check_img">
-            <img src="./../image/素材图片/imgCode.jpg">
-            <input type="text" placeholder="请输入4位数字验证码" class="check_num">
-            <input type="button" value="获取验证码" class="btn">
-            <input type="text" placeholder="请输入用户名" class="user">
-            <input type="password" placeholder="请输入新密码" class="pwd">
-            <input type="password" placeholder="确定新密码" class="repwd">
-            <input type="submit" value="立即注册" class="subm"> 
+        <div class="one_">
+            <ul class="t2">
+                <li><a href="./report_two.html">全部</a></li>
+                <li><a href="./report_s.html">申请中</a></li>
+                <li><a href="./report_d.html">试用中</a></li>
+                <li><a href="#" style="color: black;">已结束</a></li>
+            </ul>
         </div>
-    </form>
-
+        
+    	<div class="two">
+    		<ul>
+                <li>
+                    <span>首发</span>
+                    <img src="./../../image/素材图片/hot5.jpg" />
+                    <p>巴慕达 The Toaster 烤面包机</p>
+                    <span>2032</span><span>20台</span>
+                    <p>
+                        <sapn class='one'>1392</sapn>申请</p>
+                    <p>剩余时间2天</p>
+                </li>
+                
+            </ul>
+            <div class="two_1">
+                <img src="./../../image/小图片/more.png" alt="">
+                <span>点击加载更多</span> 
+            </div>
+        </div>
+    </div>
 
     <footer>
         <div id="foot">
-            <img src="./../image/素材图片/code.png" alt="">
+            <img src="./../../image/素材图片/code.png" alt="">
             <ul class="one">
-                <li><img src="./../image/素材图片/logoImg.jpg" alt=""></li>
+                <li><img src="./../../image/素材图片/logoImg.jpg" alt=""></li>
                 <li>全球酷玩试用导购平台酷·新奇·好玩·品质</li>
                 <li>微信添加"JguoJguo" 获取我们的服务</li>
             </ul>
@@ -98,7 +115,7 @@
             </ul>
         </div>
     </footer>
-    <script src="./../js/jquery.min.js"></script>
-    <script src="./../js/register.js"></script>
+    <script src="./../../js/jquery.min.js"></script>
+    <script src="./../../js/report.js"></script>
 </body>
 </html>

@@ -39,6 +39,10 @@ header{
     margin-left: 50px;
     font-size: 18px;
 }
+#head>ul>li>a{
+    font-size: 18px;
+    color: black;
+}
 #head>span{
     float: right;
     margin-left: 10px;
@@ -96,7 +100,7 @@ footer{
     color: #979c9f;
     margin-right: 30px;
 }
-#foot>.two>li:nth-child(1){
+#foot>.two>li:nth-child(1),li:nth-child(1)>a{
     margin-bottom: 30px;
     font-size: 16px;
     color: white;

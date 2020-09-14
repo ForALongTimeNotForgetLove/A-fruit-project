@@ -1,0 +1,142 @@
+#zhong>.one{
+    text-align: center;
+}
+#zhong>.one>span{
+    font-size: 40px;
+    display: inline-block;
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+#zhong>.one>ul:nth-child(2){
+    overflow: hidden;
+    width: 332px;
+    margin: 0 auto;
+}
+#zhong>.one>ul:nth-child(2)>li{
+    float: left;
+    width: 166px;
+    padding-bottom: 14px;
+}
+#zhong>.one>ul:nth-child(2)>li>a{
+    color: #ada08f;
+}
+
+
+#zhong>.two {
+	width: 100%;
+	background: #f7f7f7;
+    padding-bottom: 54px;
+    padding-top: 26px;
+}
+.two_{
+    overflow: hidden;
+    width: 1000px;
+    margin: 0 auto;
+    
+}
+.two_one{
+    float: left;
+    width: 702px;
+    margin-right: 28px;
+    border-radius: 10px;
+}
+
+.two_11{
+    width: 702px;
+    overflow: hidden;
+    margin-bottom: 25px;
+    position: relative;
+}
+.two_11>img{
+    width: 100%;
+    border-radius: 10px;
+}
+.posi{
+    width: 100%;
+    height: 118px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(242, 237, 233, .9);
+    
+}
+.posi>p:nth-child(1){
+    margin-top: 25px;
+    margin-bottom: 33px;
+    padding-left: 22px;
+    padding-right: 22px;
+    box-sizing: border-box;
+}
+.posi>p:nth-child(2){
+    width: 100%;
+    color: #a09285;
+    overflow: hidden;
+    padding-left: 22px;
+    padding-right: 22px;
+    box-sizing: border-box;
+}
+.posi>p:nth-child(2)>span:nth-child(1)>img{
+    vertical-align: middle;
+}
+.posi>p:nth-child(2)>span:nth-child(1){
+    color: red;
+    margin-right: 8px;
+}
+.posi>p:nth-child(2)>span:nth-child(3){
+    float: right;
+}
+.posi>p:nth-child(2)>span:nth-child(4){
+    float: right;
+    margin-right: 8px;
+}
+.kuang{
+    width: 100%;
+    margin-top: 13px;
+    height: 48px;
+    border: 1px solid #eaeaea;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    line-height: 48px;
+    text-align: center;
+    color: #9d9495;
+}
+
+
+
+
+.two_two{
+    float: left;
+    width: 270px;
+}
+.two_two>.p1{
+    padding-left: 24px;
+    border-left: 6px solid red;
+    margin-bottom: 20px;
+}
+.two_two>.p3{
+    margin-top: 20px;
+    margin-bottom: 14px;
+}
+.two_two>.p4{
+    font-size: 14px;
+    color: #9f9ea3;
+    line-height: 25px;
+}
+.two_two>p:nth-child(9){
+    margin-top: 64px;
+}
+
+
+#zhong>.two>.two_1 {
+	width: 126px;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 56px;
+	color: red;
+}
+
+#zhong>.two>.two_1>img {
+	margin-top: -5px;
+	vertical-align: middle;
+	margin-right: 6px;
+}
