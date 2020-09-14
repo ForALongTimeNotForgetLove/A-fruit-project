@@ -28,4 +28,10 @@ $(function(){
 	}
 })
 
-
+// 登录
+$('#head>span:eq(1)').on('click',function(){
+	$('form').toggle();
+})
+$('.tui').on('click',function(){
+	$('form').hide();
+})

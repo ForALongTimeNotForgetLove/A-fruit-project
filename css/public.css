@@ -49,6 +49,7 @@ header{
     text-align: center;
     line-height: 32px;
     box-sizing: border-box;
+    cursor: pointer;
 }
 #head>img:nth-child(5){
     width: 24px;

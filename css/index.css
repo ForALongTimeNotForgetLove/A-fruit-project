@@ -188,3 +188,95 @@
 #center>div>ul>li>ul>li:nth-child(2)>p:nth-child(7){
 	color: green;
 }
+
+
+/* 登录 */
+form {
+	position: fixed;
+	z-index: 10;
+	top: 200px;
+	left: 50%;
+	transform: translate(-50%);
+	background-color: #fff;
+	width: 690px;
+	padding-bottom: 30px; 
+  }
+form>.jig {
+	margin-top: 30px;
+	margin-left: 30px;
+	font-size: 18px;
+  }
+ form>.pohe {
+	margin-left: 30px;
+	margin-top: 20px;
+	border: 1px solid #ccc;
+	width: 363px;
+  }
+  form>.pohe #poh {
+	width: 300px;
+	margin: 14px 30px 10px;
+	border: none;
+	outline: none;
+  }
+  form>.pass {
+	margin-left: 30px;
+	margin-top: 20px;
+	border: 1px solid #ccc;
+	width: 363px;
+  }
+ form>.pass #pas {
+	width: 300px;
+	margin: 14px 30px 10px;
+	border: none;
+	outline: none;
+  }
+  form>.bmit {
+	margin-top: 20px;
+	margin-left: 30px;
+	overflow: hidden;
+	width: 363px;
+  }
+  form> .bmit input {
+	margin-top: 14px;
+  }
+  form> .bmit > button {
+	float: right;
+	background-color: red;
+	color: #fff;
+	width: 150px;
+	height: 40px;
+	border: none;
+	outline: none;
+	border-radius: 20px 20px 20px 20px;
+  }
+  form> p {
+	margin-top: 20px;
+	margin-left: 30px;
+	width: 363px;
+	overflow: hidden;
+  }
+  form> p > .papa {
+	float: right;
+  }
+  form> p > a {
+	color: #000;
+	font-size: 14px;
+  }
+  form>.code {
+	position: absolute;
+	top: 30px;
+	right: 50px;
+	border-left: 1px solid #ccc;
+	padding-left: 20px;
+  }
+  form>.code > p {
+	margin-left: 20px;
+	font-size: 16px;
+  }
+  form>.code > .tui {
+	cursor: pointer;
+	font-size: 16px;
+	position: absolute;
+	top: -10px;
+	right: -20px;
+  }
