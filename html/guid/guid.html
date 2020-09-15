@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./../../css/public.css">
     <link rel="stylesheet" href="./../../css/guid.css">
+    <script src="./../../js/doT.min.js"></script>
 </head>
 <body>
     <header>
@@ -25,26 +26,19 @@
     </header>
 
     
+    
     <div id="zhong">
-    	<div class="one">
-    		<span>导购清单</span>
-    		<ul>
-    			<li><a href="#">最新</a></li>
-    			<li><a href="./guid_two.html">最热</a></li>
-    		</ul>
-    	</div>
-    	<div class="two">
-    		<ul>
-    			<li>
-    				<img src="./../../image/素材图片/g1.jpg"/>
-    				<p>花万元把蜗居秒变“豪宅”？这12件家具就能帮你办到</p>
-    				<p>
-    					<img src="../../image/小图片/xin.png"/>
-    					<span>3</span>
-    					<img src="../../image/小图片/reply.png"/>
-    					<span>3</span>
-    				</p>
-    			</li>
+        <div class="one">
+            <span>导购清单</span>
+            <ul>
+                <li><a href="#">最新</a></li>
+                <li><a href="./guid_two.html">最热</a></li>
+            </ul>
+        </div>
+        <div class="two_">
+            <!-- 展示区域 -->
+            <ul>
+
             </ul>
             <div class="two_1">
                 <img src="./../../image/小图片/more.png" alt="">
@@ -53,6 +47,23 @@
         </div>
     </div>
 
+    <script id="guide_new" type="text/x-dot-template">
+        {{~it:value:index}}  
+            <li>
+                <a href="./guid-detail.html"><img src="{{=value.img}}"/></a>
+                <p>{{=value.text}}</p>
+                <p>
+                    <img src="../../image/小图片/xin.png" class="red"/>
+                    <span>{{=value.like}}</span>
+                    <img src="../../image/小图片/reply.png"/>
+                    <span>{{=value.words}}</span>
+                </p>
+            </li> 
+        {{~}}
+    </script> 
+
+    
+ 
     <footer>
         <div id="foot">
             <img src="./../../image/素材图片/code.png" alt="">
@@ -110,5 +121,23 @@
     </footer>
     <script src="./../../js/jquery.min.js"></script>
     <script src="./../../js/guid.js"></script>
+    <script>
+        $.ajax({
+            url: 'http://192.168.1.47:3000/guid/new',  
+            success(data){
+                console.log(data);
+                // 获取模板 
+                var template = doT.template(guide_new.innerText);
+                // 将数据引入模板，展示在指定区域 
+                $('.two_>ul').html(template(data));
+                $('.two_>ul>li').each(function(index,item){
+                    if(index%4==3){
+                        $(item).css('marginRight','0');
+                    }
+                })
+                xin(); 
+            }
+        })
+    </script>
 </body>
 </html>

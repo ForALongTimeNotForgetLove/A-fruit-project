@@ -22,7 +22,7 @@
 }
 
 
-#zhong>.two {
+#zhong>.tw {
 	width: 100%;
 	background: #f7f7f7;
     padding-bottom: 54px;
@@ -91,7 +91,7 @@
 }
 .kuang{
     width: 100%;
-    margin-top: 13px;
+    margin: 13px 0;
     height: 48px;
     border: 1px solid #eaeaea;
     background-color: #f7f7f7;
@@ -127,7 +127,7 @@
 }
 
 
-#zhong>.two>.two_1 {
+#zhong>.tw>.two_1 {
 	width: 126px;
 	text-align: center;
 	margin: 0 auto;
@@ -135,7 +135,7 @@
 	color: red;
 }
 
-#zhong>.two>.two_1>img {
+#zhong>.tw>.two_1>img {
 	margin-top: -5px;
 	vertical-align: middle;
 	margin-right: 6px;

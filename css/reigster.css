@@ -43,23 +43,19 @@ input {
 input::-webkit-input-placeholder {
     color: #A7A7A7; 
 }
-.main>input:first-child,
-.main>input:nth-child(6),
-.main>input:nth-child(7),
-.main>input:nth-child(8),
-.main>input:nth-child(9){
+.tel,.user,.pwd,.repwd,.subm{
     width: 100%;
 } 
-.main>input:nth-child(2),
-.main>input:nth-child(4) {
+.check_img,.check_num {
     width: 246px;
     margin-right: 20px;
 }
-.main>input:nth-child(5) {
+.btn {
     width: 129px;
-    color: #B0AFAD;
+    color: #f1f1f1;
+    background-color:  #c9c8c7;
 }
-.main>input:last-child {
+.subm {
     background-color: #FE5341;
     color: white;
     font-size: 20px;
@@ -67,6 +63,6 @@ input::-webkit-input-placeholder {
 .main>input[type=text],.main>input[type=password] {
     text-indent: 10px;
 }
-.main>input[type=button] {
+.btn,.subm {
     cursor: pointer;
 }

@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./../../css/public.css">
     <link rel="stylesheet" href="./../../css/guid.css">
+    <script src="./../../js/doT.min.js"></script>
 </head>
 <body>
     <header>
@@ -33,18 +34,10 @@
     			<li><a href="#">最热</a></li>
     		</ul>
     	</div>
-    	<div class="two">
+    	<div class="two_">
+            <!-- 展示区域 -->
     		<ul>
-    			<li>
-    				<img src="./../../image/素材图片/g1.jpg"/>
-    				<p>花万元把蜗居秒变“豪宅”？这12件家具就能帮你办到</p>
-    				<p>
-    					<img src="../../image/小图片/xin.png"/>
-    					<span>3</span>
-    					<img src="../../image/小图片/reply.png"/>
-    					<span>3</span>
-    				</p>
-    			</li>
+    			
             </ul>
             <div class="two_1">
                 <img src="./../../image/小图片/more.png" alt="">
@@ -52,6 +45,21 @@
             </div>
         </div>
     </div>
+    <!-- 创建模板 -->
+    <script id="guide_hot" type="text/x-dot-template">
+        {{~it:value:index}}
+            <li>
+                <a href="./guid-detail.html"><img src="{{=value.img}}"/></a>
+                <p>{{=value.text}}</p>
+                <p>
+                    <img src="../../image/小图片/xin.png" class="red"/>
+                    <span>{{=value.like}}</span>
+                    <img src="../../image/小图片/reply.png"/>
+                    <span>{{=value.words}}</span>
+                </p>
+            </li>
+        {{~}}
+    </script>
 
     <footer>
         <div id="foot">
@@ -110,5 +118,23 @@
     </footer>
     <script src="./../../js/jquery.min.js"></script>
     <script src="./../../js/guid.js"></script>
+    <script>
+        $.ajax({
+            url: 'http://192.168.1.47:3000/guid/hot',  
+            success(data){
+                console.log(data);
+                // 获取模板 
+                var template = doT.template(guide_hot.innerText);
+                // 将数据引入模板，展示在指定区域 
+                $('.two_>ul').html(template(data));
+                $('.two_>ul>li').each(function(index,item){
+                    if(index%4==3){
+                        $(item).css('marginRight','0');
+                    }
+                })
+                xin(); 
+            }
+        })
+    </script>
 </body>
 </html>

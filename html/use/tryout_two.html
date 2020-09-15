@@ -6,6 +6,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="./../../css/public.css">
     <link rel="stylesheet" href="./../../css/tryout.css">
+    <script src="./../../js/doT.min.js"></script>
+    <script src="./../../js/jquery.min.js"></script>
 </head>
 <body>
     <header>
@@ -33,21 +35,13 @@
         </div>
         
         
-    	<div class="two">
+    	<div class="tw">
     		<div class="two_">
-                <div class="two_one">
-                    <div class="two_01">
-                        <div class="two_11">
-                            <img src="./../../image/素材图片/bg8.jpg" alt="">
-                            <div class="posi">
-                                <p>空气净化器里面学问多得惊呆你，你选对了吗？</p>
-                                <p><span><img src="./../../image/小图片/kou.png" alt=""> 苏苏</span><span>2016-01-25</span>
-                                <span><img src="./../../image/小图片/reply.png" alt=""> 3</span>
-                                <span><img src="./../../image/小图片/zan.png" alt=""> 3</span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <!-- 展示区域 -->
+                <ul class="two_one">
+                    
+                </ul>
+
                 <div class="two_two">
                     <p class="p1">极果体验师</p>
                     <img src="./../../image/素材图片/tiyanImg.jpg" alt="">
@@ -71,6 +65,42 @@
             </div>
         </div>
     </div>
+
+    <!-- 创建模板 -->
+    <script id="report_hot" type="text/x-dot-template">
+        {{~it:value:index}}
+        {{?index<7}}
+            <li class="two_01">
+                <div class="two_11">
+                    <img src="{{=value.img}}">
+                    <div class="posi">
+                        <p>{{=value.text}}</p>
+                        <p><span><img src="./../../image/小图片/kou.png" alt=""> 苏苏</span><span>2016-01-25</span>
+                        <span><img src="./../../image/小图片/reply.png" alt=""> 3</span>
+                        <span><img src="./../../image/小图片/zan.png" alt=""> 3</span></p>
+                    </div>
+                </div>
+                <div class="kuang">
+                    关于格林威特空气净化器还有 4 篇报告，点击查看
+                </div>
+            </li>
+        {{?}}
+        {{~}}
+    </script> 
+    <script>
+        $.ajax({
+            url: 'http://192.168.1.47:3000/report/hot',  
+            success(data){
+                // console.log(data);
+                // 获取模板 
+                var template = doT.template(report_hot.innerText);
+                // 将数据引入模板，展示在指定区域 
+                $('.two_one').html(template(data));
+                 
+            }
+        })
+    </script>
+ 
 
     <footer>
         <div id="foot">
@@ -126,7 +156,6 @@
             </ul>
         </div>
     </footer>
-    <script src="./../../js/jquery.min.js"></script>
     <script src="./../../js/tryout.js"></script>
 </body>
 </html>
