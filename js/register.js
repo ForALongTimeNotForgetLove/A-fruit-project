@@ -13,7 +13,7 @@ $('form').on('submit',function(){
         }else if($('.repwd').val()!=$('input[name=rePassword]').val()){
             alert('两次密码输入不一致');
         }else{
-            alert('注册成功');
+            alert('注册成功'); 
         }
     }else{
         alert('手机号格式不正确');
@@ -34,6 +34,7 @@ $('.btn').one('click',function cli(){
         } 
     },1000)
 })
+
 
 
 

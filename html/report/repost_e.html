@@ -41,19 +41,40 @@
             </ul>
         </div>
         
-    	<div class="two">
-    		<ul>
-                <li>
+    	<div class="two_">
+    		<ul id="get_">
+                <!-- <li>
                     <span>首发</span>
                     <img src="./../../image/素材图片/hot5.jpg" />
                     <p>巴慕达 The Toaster 烤面包机</p>
                     <span>2032</span><span>20台</span>
                     <p>
-                        <sapn class='one'>1392</sapn>申请</p>
+                        <sapn class='one'>1392</sapn>申请
+                    </p>
                     <p>剩余时间2天</p>
-                </li>
-                
+                </li> -->
             </ul>
+            <script src="./../../js/doT.min.js"></script>
+            <script id="first_" type="text/x-dot-template">
+                {{for(var i in it){}}
+                {{?i<12}}
+                <li class='green'>
+                {{?it[i].info_ty=='体验师转享'}}
+                    <span class='text_ yellow'>{{=it[i].info_ty}}</span>
+                {{??}}
+                    <span class='text_'>{{=it[i].info_ty}}</span>
+                {{?}}
+                        <img src="{{=it[i].img}}" />
+                        <p>{{=it[i].text}}</p>
+                        <span>{{=it[i].totalnum}}</span><span>{{=it[i].num}}台</span>
+                        <p>
+                            <sapn class='one'>{{=it[i].apply}}</sapn>申请
+                        </p>
+                        <p>剩余时间2天</p>
+                    </li>
+                {{?}}
+                {{}}}
+            </script>
             <div class="two_1">
                 <img src="./../../image/小图片/more.png" alt="">
                 <span>点击加载更多</span> 
@@ -75,7 +96,7 @@
                 <li>如何提高成功率</li>
             </ul>
             <ul class="three">
-                <li>友情链接</li>
+                <li> 友情链接</li>
                 <li>
                     <ul>
                         <li>智东西</li>
@@ -107,15 +128,17 @@
                 <li>indiegogo 众筹购买攻略</li>
             </ul>
             <ul class="two">
-                <li>厂商合作</li>
+                <li><a href="./../about&help/about.html">厂商合作</a></li>
                 <li>关于极果</li>
                 <li>联系我们</li>
                 <li>商务合作：BD@jiguo.com</li>
                 <li>CEO邮箱：CEO@jiguo.com</li>
             </ul>
         </div>
+        <p>&copy;2016 极果版权所有</p>
     </footer>
     <script src="./../../js/jquery.min.js"></script>
     <script src="./../../js/report.js"></script>
+    <script src="./../../js/report_.js"></script>
 </body>
 </html>
