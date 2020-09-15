@@ -54,6 +54,34 @@ $(function(){
 	})
 })
 
+
+// 点赞
+function xin(){
+    $('.red').on('click',function(){
+        if($(this).hasClass('re') !=true){
+           $(this).attr('src','../image/小图片/redxin.png');
+           var three = $(this).next('span').text()-0;
+           $(this).next('span').text(three+1);
+           $(this).addClass('re');
+        }else{
+           $(this).attr('src','../image/小图片/xin.png');
+           var three = $(this).next('span').text()-0;
+           $(this).next('span').text(three-1);
+           $(this).removeClass('re');
+        }
+    })
+}
+
+
+
+ 
+
+// 等待
+$('.two_1').on('click',function(){
+    $(this).find('img').attr('src','./../image/小图片/loading-icon.gif')
+    $(this).find('span').text('请等待');
+})
+
 // 登录
 $('#head>span:eq(1)').on('click',function(){
 	$('form').toggle();
@@ -61,3 +89,23 @@ $('#head>span:eq(1)').on('click',function(){
 $('.tui').on('click',function(){
 	$('form').hide();
 })
+
+
+var tel_patt=/^1[3578]\d{9}$/; 
+var pass=/^\w{6,10}$/;
+$('.login').on('submit',function(){   
+	$.ajax({
+		url:'http://192.168.1.47:3000/users',
+		type:"post",
+		data:{
+			type:'login',
+			phone: $('#poh').val(),
+			pass: $('#pwd').val()
+		},
+		success(res){
+			alert(res);
+		} 
+	}) 
+       
+})
+ 

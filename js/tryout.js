@@ -3,4 +3,3 @@ $('.two_1').on('click',function(){
     $(this).find('span').text('请等待')
  })
  $('.one').find('a[href=#]').parent().css('border-bottom' ,'6px solid red');
-
