@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./../../css/public.css">
     <link rel="stylesheet" href="./../../css/Coldplay.css">
     <link rel="stylesheet" href="./../../css/Cold_three.css">
+    <script src="./../../js/doT.min.js"></script>
 </head>
 
 <body>
@@ -37,19 +38,198 @@
                 <li><a href="#">品类</a></li>
             </ul>
         </div>
-        <div class="two">
+        <div class="two_">
             <div class="two_q">
                 <div class="t_1">生活</div>
                 <ul class="t_2">
                     <li>
                         <img src="./../../image/素材图片/cat_1.png" alt="">
-                        <p>空气净化器(27)</p>
+                        <p><span>空气净化器</span>(27)</p>
+                    </li>
+                    <li>
+                        <img src="./../../image/素材图片/cat_2.png" alt="">
+                        <p><span>吸尘器</span>(27)</p>
+                    </li>
+                    <li>
+                        <img src="./../../image/素材图片/cat_3.png" alt="">
+                        <p><span>扫地机器人</span>(27)</p>
+                    </li>
+                    <li>
+                        <img src="./../../image/素材图片/cat_4.png" alt="">
+                        <p><span>电风扇</span>(27)</p>
+                    </li>
+                    <li>
+                        <img src="./../../image/素材图片/cat_5.png" alt="">
+                        <p><span>净水壶</span>(27)</p>
+                    </li>
+                    <li>
+                        <img src="./../../image/素材图片/cat_6.png" alt="">
+                        <p><span>电饭煲</span>(27)</p>
+                    </li>
+                    <li>
+                        <img src="./../../image/素材图片/cat_7.png" alt="">
+                        <p><span>咖啡机</span>(27)</p>
+                    </li>
+                    <li>
+                        <img src="./../../image/素材图片/cat_8.png" alt="">
+                        <p><span>原汁机</span>(27)</p>
                     </li>
                 </ul>
-                <ul class="t_3">
-                    <li>电视(21)</li>
+                
+                <ul class="t_3" id="get_">
+                    <!-- <li>电视(<span>21</span>)</li> -->
                 </ul>
+                <script id="first_" type="text/x-dot-template">
+                    {{for(var i in it){}}
+                        <li>
+                            <span>{{=it[i].productName}}</span>(<span>{{=it[i].nums}}</span>)
+                        </li>
+                    {{}}}
+                </script>
             </div>
+            <div class="two_q">
+                <div class="t_1">个人护理</div>
+                <ul class="t_2">
+                    <li>
+                        <img src="./../../image/素材图片/cat_9.png" alt="">
+                        <p><span>电动牙刷</span>(21)</p>
+                    </li>
+                    <li>
+                        <img src="./../../image/素材图片/cat_10.png" alt="">
+                        <p><span>剃须刀</span>(21)</p>
+                    </li>
+                    <li>
+                        <img src="./../../image/素材图片/cat_11.png" alt="">
+                        <p><span>按摩器</span>(21)</p>
+                    </li>
+                    
+                </ul>
+                
+                <ul class="t_3" id="get_1">
+                    <!-- <li>电视(<span>21</span>)</li> -->
+                </ul>
+                <script id="first_1" type="text/x-dot-template">
+                    {{for(var i in it){}}
+                        <li>
+                            <span>{{=it[i].productName}}</span>(<span>{{=it[i].nums}}</span>)
+                        </li>
+                    {{}}}
+                </script>
+            </div>
+            <div class="two_q">
+                <div class="t_1">出行</div>
+                <ul class="t_2">
+                    <li>
+                        <img src="./../../image/素材图片/cat_1.png" alt="">
+                        <p><span>电动牙刷</span>(21)</p>
+                    </li>
+                    <li>
+                        <img src="./../../image/素材图片/cat_2.png" alt="">
+                        <p><span>剃须刀</span>(21)</p>
+                    </li>
+                    <li>
+                        <img src="./../../image/素材图片/cat_3.png" alt="">
+                        <p><span>按摩器</span>(21)</p>
+                    </li>
+                </ul>
+                <ul class="t_3" id="get_2">
+                    <!-- <li>电视(<span>21</span>)</li> -->
+                </ul>
+                <script id="first_2" type="text/x-dot-template">
+                    {{for(var i in it){}}
+                        <li>
+                            <span>{{=it[i].productName}}</span>(<span>{{=it[i].nums}}</span>)
+                        </li>
+                    {{}}}
+                </script>
+            </div>
+            <div class="two_q">
+                <div class="t_1">数码家电</div>
+                <ul class="t_2">
+                    <li>
+                        <img src="./../../image/素材图片/cat_4.png" alt="">
+                        <p><span>电动牙刷</span>(21)</p>
+                    </li>
+                    <li>
+                        <img src="./../../image/素材图片/cat_5.png" alt="">
+                        <p><span>剃须刀</span>(21)</p>
+                    </li>
+                    <li>
+                        <img src="./../../image/素材图片/cat_6.png" alt="">
+                        <p><span>按摩器</span>(21)</p>
+                    </li>
+                </ul>
+                <ul class="t_3" id="get_3">
+                    <!-- <li>电视(<span>21</span>)</li> -->
+                </ul>
+                <script id="first_3" type="text/x-dot-template">
+                    {{for(var i in it){}}
+                        <li>
+                            <span>{{=it[i].productName}}</span>(<span>{{=it[i].nums}}</span>)
+                        </li>
+                    {{}}}
+                </script>
+            </div>
+            <div class="two_q">
+                <div class="t_1">智能穿戴</div>
+                <ul class="t_2">
+                    <li>
+                        <img src="./../../image/素材图片/cat_7.png" alt="">
+                        <p><span>电动牙刷</span>(21)</p>
+                    </li>
+                    <li>
+                        <img src="./../../image/素材图片/cat_8.png" alt="">
+                        <p><span>剃须刀</span>(21)</p>
+                    </li>
+                    <li>
+                        <img src="./../../image/素材图片/cat_9.png" alt="">
+                        <p><span>按摩器</span>(21)</p>
+                    </li>
+                    <li>
+                        <img src="./../../image/素材图片/cat_10.png" alt="">
+                        <p><span>电动牙刷</span>(21)</p>
+                    </li>
+                    <li>
+                        <img src="./../../image/素材图片/cat_11.png" alt="">
+                        <p><span>剃须刀</span>(21)</p>
+                    </li>
+                </ul>
+                <ul class="t_3" id="get_4">
+                    <!-- <li>电视(<span>21</span>)</li> -->
+                </ul>
+                <script id="first_4" type="text/x-dot-template">
+                    {{for(var i in it){}}
+                        <li>
+                            <span>{{=it[i].productName}}</span>(<span>{{=it[i].nums}}</span>)
+                        </li>
+                    {{}}}
+                </script>
+            </div>
+            <div class="two_q">
+                <div class="t_1">运动户外</div>
+                <ul class="t_2">
+                    <li>
+                        <img src="./../../image/素材图片/cat_10.png" alt="">
+                        <p><span>电动牙刷</span>(21)</p>
+                    </li>
+                    <li>
+                        <img src="./../../image/素材图片/cat_11.png" alt="">
+                        <p><span>剃须刀</span>(21)</p>
+                    </li>
+                </ul>
+                <ul class="t_3" id="get_5">
+                    <!-- <li>电视(<span>21</span>)</li> -->
+                </ul>
+                <script id="first_5" type="text/x-dot-template">
+                    {{for(var i in it){}}
+                        <li>
+                            <span>{{=it[i].productName}}</span>(<span>{{=it[i].nums}}</span>)
+                        </li>
+                    {{}}}
+                </script>
+            </div>
+            
+            
             <div class="two_1">
                 <img src="./../../image/小图片/more.png" alt="">
                 <span>点击加载更多</span>
@@ -111,9 +291,39 @@
                 <li>CEO邮箱：CEO@jiguo.com</li>
             </ul>
         </div>
+        <p>&copy;2016 极果版权所有</p>
     </footer>
     <script src="./../../js/jquery.min.js"></script>
     <script src="./../../js/Coldplay.js"></script>
+    <script>
+        var ajax_ = new XMLHttpRequest() || new ActiveXObject('Microsoft.XMLHTTP');
+        ajax_.open('get', 'http://192.168.1.47:3000/play/category', true);
+        ajax_.send();
+        ajax_.onreadystatechange = function () {
+            if (ajax_.readyState == 4 && ajax_.status == 200) {
+                var data = ajax_.responseText;
+                // 2.找数据源
+                data = JSON.parse(data);
+                console.log(data);
+                var innerT = doT.template(document.getElementById('first_').innerText);
+                var innerTq = doT.template(document.getElementById('first_1').innerText);
+                var innerTw = doT.template(document.getElementById('first_2').innerText);
+                var innerTe = doT.template(document.getElementById('first_3').innerText);
+                var innerTe = doT.template(document.getElementById('first_4').innerText);
+                var innerTe = doT.template(document.getElementById('first_5').innerText);
+                // console.log(innerT(data.live))
+
+                document.getElementById('get_').innerHTML = innerT(data.live);
+                document.getElementById('get_1').innerHTML = innerTq(data.个人护理);
+                document.getElementById('get_2').innerHTML = innerTw(data.出行);
+                document.getElementById('get_3').innerHTML = innerTw(data.数码家电);
+                document.getElementById('get_4').innerHTML = innerTw(data.智能穿戴);
+                document.getElementById('get_5').innerHTML = innerTw(data.运动户外);
+                // console.log($('.two_').find('li').length)
+
+            }
+        }
+    </script>
 </body>
 
 </html>

@@ -54,6 +54,7 @@ $('.btn').one('click',function cli(){
 
 
 
+
 // $.post('http://192.168.1.47:3000/user/regist',{
 //     username:'admin',
 //     password:'123456'
