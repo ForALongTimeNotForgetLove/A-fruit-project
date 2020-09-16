@@ -75,14 +75,15 @@
     padding-right: 22px;
     box-sizing: border-box;
 }
-.posi>p:nth-child(2)>span:nth-child(1)>img{
+.posi>p:nth-child(2)>img{
     vertical-align: middle;
 }
-.posi>p:nth-child(2)>span:nth-child(1){
+.posi>p:nth-child(2)>span:nth-child(2){
     color: red;
     margin-right: 8px;
+
 }
-.posi>p:nth-child(2)>span:nth-child(3){
+.posi>p:nth-child(2)>span:last-child{
     float: right;
 }
 .posi>p:nth-child(2)>span:nth-child(4){
