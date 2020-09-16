@@ -325,6 +325,7 @@ form>.jig {
 }
 .good_guid li>a>img,.good_report li>a>img {
 	width: 222px;
+	height: 131px;
 }
 .good_guid li>p:nth-of-type(1),
 .good_report li>p:nth-of-type(1) {
@@ -338,9 +339,16 @@ form>.jig {
 .good_report li>p:nth-of-type(2) {
 	margin-top: 20px; 
 	font-size: 14px; 
-	margin-left: 160px;
+	margin-left: 158px;
 }
-
+.good_guid li>p:nth-of-type(2) img,
+.good_report li>p:nth-of-type(2) img{
+	margin-right: 2px;
+}
+.good_guid li>p:nth-of-type(2)>span:nth-child(2),
+.good_report li>p:nth-of-type(2)>span:nth-child(2){
+	margin-right: 10px;
+}
 /* 报告精选 */
 .good_report{ 
 	background: #f7f7f7; 

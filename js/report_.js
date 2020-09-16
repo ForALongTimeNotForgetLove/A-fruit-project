@@ -6,7 +6,7 @@ ajax_.onreadystatechange = function () {
         var data = ajax_.responseText;
         // 2.找数据源
         data = JSON.parse(data);
-       //  console.log(data);
+        // console.log(data);
         var innerT = doT.template(document.getElementById('first_').innerText);
         // console.log(innerT(data.list))
 
