@@ -101,7 +101,7 @@ footer{
     color: #979c9f;
     margin-right: 30px;
 }
-#foot>.two>li:nth-child(1),li:nth-child(1)>a{
+#foot>.two>li:nth-child(1),#foot>.two>li:nth-child(1)>a{
     margin-bottom: 30px;
     font-size: 16px;
     color: white;

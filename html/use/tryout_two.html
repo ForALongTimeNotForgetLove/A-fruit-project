@@ -75,9 +75,12 @@
                     <img src="{{=value.img}}">
                     <div class="posi">
                         <p>{{=value.text}}</p>
-                        <p><span><img src="./../../image/小图片/kou.png" alt=""> 苏苏</span><span>2016-01-25</span>
-                        <span><img src="./../../image/小图片/reply.png" alt=""> 3</span>
-                        <span><img src="./../../image/小图片/zan.png" alt=""> 3</span></p>
+                        <p><img src="./../../image/小图片/kou.png" alt=""> <span>苏苏 </span> <span> 2016-01-25</span>
+                            <span>
+                                <img src="./../../image/小图片/zan.png" alt="" class="red"> <span>3</span>
+                                <img src="./../../image/小图片/reply.png" alt=""> <span>5</span>
+                            </span>
+                        </p>
                     </div>
                 </div>
                 <div class="kuang">
@@ -96,7 +99,7 @@
                 var template = doT.template(report_hot.innerText);
                 // 将数据引入模板，展示在指定区域 
                 $('.two_one').html(template(data));
-                 
+                 zan();
             }
         })
     </script>
