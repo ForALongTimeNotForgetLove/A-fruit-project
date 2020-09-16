@@ -61,7 +61,7 @@
             <script id="first_" type="text/x-dot-template">
                 {{for(var i in it){}}
                 {{?i<12}}
-                <li>
+                    <li>
                 {{?it[i].info_ty=='体验师转享'}}
                     <span class='text_ yellow'>{{=it[i].info_ty}}</span>
                 {{??}}
@@ -72,7 +72,8 @@
                         <span>{{=it[i].totalnum}}</span><span>{{=it[i].num}}台</span>
                         <p>
                             <sapn class='one'>{{=it[i].apply}}</sapn>申请</p>
-                        <p>剩余时间2天</p>
+                
+                        <p class='time'>已过期</p>
                     </li>
                 {{?}}
                 {{}}}
